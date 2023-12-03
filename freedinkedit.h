@@ -1,0 +1,14 @@
+extern void place_sprites();
+extern void draw_screen_editor();
+extern void draw_current();
+extern void loadtile(int tilescreen);
+extern int editor_mode, cur_sprite, render_time;
+extern int xy2screentile(int x, int y);
+extern void editor_save_screen(int num);
+extern int minimap_status;
+extern void shrink_screen_to_these_cords(int x, int y);
+extern void copy_front_to_two();
+extern void editor_load_screen(int num);
+extern void lsm_kill_all_nonlive_sprites();
+extern Uint32 screenTime;
+//char death[150];
