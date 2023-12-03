@@ -11,7 +11,7 @@ Or Yedit for short. A fork of Freedinkedit 109.x with a Dear ImGui interface. At
 Building
 ========
 
-Yedit uses the Meson build system. After installing it from your distro's package manager, and installing the relevant SDL2 dev packages including Mixer, TTF, GFX and Image, along with Gettext/Libintl, freetype2 and fontconfig, clone the repo and run:
+Yedit uses the Meson build system. After installing it from your distro's package manager, and installing the relevant SDL2 dev packages including Mixer, TTF, GFX and Image, along with Gettext/Libintl, freetype2 and fontconfig, clone the repo and cd yedit then run:
 
 ```
 meson setup builddir
