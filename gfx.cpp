@@ -92,7 +92,7 @@ IOGfxDisplay* g_display = NULL;
  */
 int gfx_init(bool dinkgl, bool windowed, char* splash_path) {
 	//Yeolde: Changed this so it always uses SDL renderer
-	dinkgl = false;
+	//dinkgl = false;
 	if (dinkgl)
 		g_display =
 				new IOGfxDisplayGL2(GFX_RES_W, GFX_RES_H, truecolor,

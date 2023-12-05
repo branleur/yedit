@@ -287,7 +287,7 @@ char* latin1_to_utf8(char* source) {
 	while (*pcs != '\0') {
 		if (pcd == pcd_limit) {
 			cur_alloc_size += step;
-			dest = (u_char*)realloc(dest, cur_alloc_size);
+			dest = (unsigned char*)realloc(dest, cur_alloc_size);
 			pcd = dest + cur_alloc_size - step;
 			pcd_limit = pcd + step;
 		}

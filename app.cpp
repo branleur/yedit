@@ -204,7 +204,7 @@ address).  */
  */
 App::App()
 	: splash_path(NULL), g_b_no_write_ini(0), opt_version(108),
-	dinkini_playmidi(false), dinkgl(true), windowed(false) {
+	dinkini_playmidi(false), dinkgl(false), windowed(false) {
 	/* chdir to resource paths under woe&android */
 	app_chdir();
 

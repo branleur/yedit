@@ -54,8 +54,10 @@
 //
 // #define BACKWARD_SYSTEM_WINDOWS
 //  - specialization for Windows (Clang 9 and MSVC2017)
-//
-// #define BACKWARD_SYSTEM_UNKNOWN
+//Yeolde: To make sure it compiles on MSYS2
+#ifdef _WIN32
+ #define BACKWARD_SYSTEM_UNKNOWN
+#endif
 //	- placebo implementation, does nothing.
 //
 #if defined(BACKWARD_SYSTEM_LINUX)

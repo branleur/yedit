@@ -10,6 +10,8 @@ font_deps = [dependency('fontconfig'), dependency('freetype2')]
 i18n = import('i18n')
 i18n.gettext(meson.project_name())
 
+incdir = include_directories('include')
+
 # Our output
 executable('yedit',
            'live_screen.cpp',
@@ -62,4 +64,4 @@ executable('yedit',
            'app.cpp',
            'backward.cpp',
            'imgui_impl_opengl3.cpp',
-           install : true, dependencies: [sdl2_deps, intl_dep, font_deps])
+           install : true, dependencies: [sdl2_deps, intl_dep, font_deps], include_directories: incdir)
